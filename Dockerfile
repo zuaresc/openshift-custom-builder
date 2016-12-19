@@ -47,7 +47,7 @@ RUN curl -sL -0 https://services.gradle.org/distributions/gradle-${GRADLE_VERSIO
     ln -sf /usr/local/gradle/bin/gradle /usr/local/bin/gradle
 
 LABEL io.k8s.display-name="OpenShift Java Spring Boot Gradle Builder" \
-      io.k8s.description="ELS Docker Java Builder"
+      io.k8s.description="Docker Java Builder"
 
 ENV HOME=/root
 RUN mkdir -p /root/.ssh && touch /root/.ssh/id_rsa && chmod 600 /root/.ssh/id_rsa
